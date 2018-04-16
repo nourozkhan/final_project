@@ -31,8 +31,8 @@ class MyStreamer(TwythonStreamer):
         self.disconnect()
 
 
-stream = MyStreamer("nkm6QqtBlsAMarl65vofBHZSO", "Ud6bLeh7XUO6T3uqIvjUocdOQCsTUWs7yyNH9oLlsE43GEBtUH",
-                        "776737130370433024-Muj5zw18tozpI2mpWx0DlzXQKucNXVZ", "aQsUV6okJRqHGzP15Tdhnq9YbTw5vKIjzVdB5Xq5ULasY")
+stream = MyStreamer("Consumer Key", "Consumer Secret ",
+                        "Access Token", "Access Token Secret")
 
 # starts consuming public statuses that contain the keyword 'data'
 stream.statuses.filter(track='donald trump')
